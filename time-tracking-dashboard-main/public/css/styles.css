@@ -1,0 +1,16 @@
+body {
+  background-color: hsl(226, 43%, 10%);
+  padding: 30px 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.name img {
+  width: 50px;
+}
