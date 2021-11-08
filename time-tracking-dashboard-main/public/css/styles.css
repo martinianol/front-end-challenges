@@ -2,6 +2,7 @@ body {
   background-color: hsl(226, 43%, 10%);
   padding: 30px 10px;
   color: white;
+  font-family: 'Rubik';
 }
 
 .attribution {
@@ -14,4 +15,29 @@ body {
 
 .name img {
   width: 50px;
+}
+
+.time_options {
+  text-align: center;
+}
+
+.standard_card_title {
+  background-color: coral;
+  text-align: right;
+  height: 30px;
+}
+.standard_card_title img {
+  height: 100%;
+}
+
+.standard_card {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.standard_card .actual_info {
+  text-align: left;
+  font-size: 18px;
 }
