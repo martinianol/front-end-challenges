@@ -1,6 +1,7 @@
 body {
   background-color: hsl(226, 43%, 10%);
   padding: 30px 10px;
+  color: white;
 }
 
 .attribution {
