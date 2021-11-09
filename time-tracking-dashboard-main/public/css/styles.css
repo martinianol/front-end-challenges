@@ -68,31 +68,52 @@ main {
 
 .standard_card_container {
   margin: 15px 0px;
+  background-color: #ff8b64;
+  text-align: right;
+  border-radius: 15px;
+  height: 38px;
 }
 
-.standard_card_title {
-  background-color: coral;
-  text-align: right;
-  height: 30px;
-}
-.standard_card_title img {
-  height: 100%;
+.standard_card_container img {
+  width: 78px;
+  margin-right: 18px;
 }
 
 .standard_card_info {
   background-color: #1c204b;
   border-radius: 15px;
+  z-index: 1;
+  padding: 28px 24px;
+  position: relative;
+}
+.category_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.category_title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.category_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
 .actual_info {
   text-align: left;
-  font-size: 18px;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 37.92px;
 }
 
 .last_info {
-  display: flex;
-  flex-direction: column;
   text-align: right;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.78px;
+  color: #bbc0ff;
 }
