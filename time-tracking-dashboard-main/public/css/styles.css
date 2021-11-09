@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.currentLink {
+  color: #fff;
+}
+
 body {
   background-color: hsl(226, 43%, 10%);
   margin: 0;
@@ -71,17 +80,23 @@ main {
   border-radius: 15px;
 }
 
-.Work {
+.work {
   background-color: #ff8b64;
 }
-.Play {
+.play {
   background-color: #55c2e6;
 }
 .study {
-  background-color: #f04667;
+  background-color: #ff5e7d;
 }
 .exercise {
-  background-color: #f04667;
+  background-color: #4bcf82;
+}
+.social {
+  background-color: #7335d2;
+}
+.care {
+  background-color: #f1c75b;
 }
 
 .standard_card_container .icon {
@@ -99,6 +114,9 @@ main {
   top: -18px;
 }
 
+.exercise .icon img {
+  top: 0px;
+}
 .standard_card_container .elipses {
   margin: 0;
   padding: 0;

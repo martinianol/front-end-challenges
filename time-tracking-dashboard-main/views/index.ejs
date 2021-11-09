@@ -32,14 +32,14 @@
           </div>
         </div>
         <ul class="time_options">
-          <li id="daily">Daily</li>
-          <li id="weekly">Weekly</li>
-          <li id="monthly">Monthly</li>
+          <li id="daily" ><a href="/daily">Daily</a></li>
+          <li id="weekly" class = "currentLink"><a href="/weekly">Weekly</a></li>
+          <li id="monthly"><a href="/monthly">Monthly</a></li>
         </ul>
       </div>
       <% data.forEach(element => { %>
 
-      <div class="standard_card_container <%= element.title %>">
+      <div class="standard_card_container <%= element.title.toLowerCase() %>">
         <figure class="icon">
           <img src="public/images/<%=element.icon%>" />
         </figure>
@@ -47,13 +47,15 @@
           <div class="category_container">
             <div class="category_title"><%=element.title%></div>
             <figure class="elipses">
-              <img src="public/images/icon-ellipsis.svg" />
+              <a>
+                <img src="public/images/icon-ellipsis.svg" />
+              </a>
             </figure>
           </div>
           <div class="category_time">
-            <div class="actual_info"><%=element.timeframes.weekly.current%>hrs</div>
+            <div class="actual_info"><%=element.current%>hrs</div>
             <div class="last_info">
-              Last week - <%=element.timeframes.weekly.previous%>hrs
+              Last week - <%=element.previous%>hrs
             </div>
             </div>
           </div>
