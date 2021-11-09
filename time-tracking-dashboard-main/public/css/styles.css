@@ -64,7 +64,8 @@ main {
 .title {
   color: #bbc0ff;
 }
-.name {
+
+.name_last_name {
   font-size: 24px;
   font-weight: 300;
   line-height: 28.4px;
@@ -147,7 +148,7 @@ main {
   text-align: right;
   font-weight: 400;
   font-size: 15px;
-  line-height: 17.78px;
+  line-height: 18px;
   color: #bbc0ff;
 }
 
@@ -177,13 +178,74 @@ main {
 }
 
 @media (min-width: 600px) {
+  main {
+    padding: 255px 165px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .main_card {
+    min-width: 255px;
+  }
+
+  .image_name {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 43px;
+    padding-top: 37px;
+    padding-left: 32px;
+    padding-bottom: 80px;
+  }
+
+  .image_name img {
+    width: 78px;
+  }
+
+  .name_last_name {
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .time_options {
+    flex-direction: column;
+    gap: 21px;
+    align-items: flex-start;
+    margin-left: 32px;
+    margin-top: 26px;
+    height: auto;
+  }
+
   section.cards_container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
+
+  .standard_card_container {
+    min-width: 255px;
+    margin: 0;
+  }
   .category_time {
     flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
     align-items: start;
+  }
+
+  .actual_info {
+    font-size: 56px;
+    line-height: 66px;
+  }
+  .last_info {
+    text-align: left;
+  }
+  .standard_card_info {
+    padding: 30px;
   }
 }
