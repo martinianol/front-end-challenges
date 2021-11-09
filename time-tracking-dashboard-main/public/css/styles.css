@@ -1,8 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: hsl(226, 43%, 10%);
-  padding: 30px 10px;
+  margin: 0;
   color: white;
   font-family: 'Rubik';
+}
+
+main {
+  padding: 81px 24px;
 }
 
 .attribution {
@@ -13,12 +21,53 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-.name img {
-  width: 50px;
+/* Main Card */
+
+.main_card {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+.image_name img {
+  width: 65px;
+  border: white solid 3px;
+  border-radius: 50%;
+}
+
+.image_name {
+  background-color: #5747ea;
+  border-radius: 15px;
+  padding: 35px 39px 34px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  line-height: 18px;
+}
+.title {
+  color: #bbc0ff;
+}
+.name {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.4px;
 }
 
 .time_options {
   text-align: center;
+  align-items: center;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0px; /* Remove margins */
+  color: #7078c9;
+}
+
+/*Standard Card */
+
+.standard_card_container {
+  margin: 15px 0px;
 }
 
 .standard_card_title {
@@ -30,14 +79,20 @@ body {
   height: 100%;
 }
 
-.standard_card {
-  background-color: hsl(235, 46%, 20%);
-  border-radius: 10px;
+.standard_card_info {
+  background-color: #1c204b;
+  border-radius: 15px;
   display: flex;
   justify-content: space-around;
 }
 
-.standard_card .actual_info {
+.actual_info {
   text-align: left;
   font-size: 18px;
+}
+
+.last_info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
 }
