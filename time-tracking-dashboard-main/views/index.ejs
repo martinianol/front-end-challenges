@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./public/css/styles.css" />
 
     <title>Frontend Mentor | Time tracking dashboard</title>
+    <script src="public/js/index.js" defer></script>
   </head>
   <body>
     <main>
@@ -32,11 +33,12 @@
           </div>
         </div>
         <ul class="time_options">
-          <li id="daily" ><a href="/daily">Daily</a></li>
-          <li id="weekly" class = "currentLink"><a href="/weekly">Weekly</a></li>
-          <li id="monthly"><a href="/monthly">Monthly</a></li>
+          <li><a href="/daily" id="daily">Daily</a></li>
+          <li><a href="/weekly" id="weekly">Weekly</a></li>
+          <li><a href="/monthly" id="monthly">Monthly</a></li>
         </ul>
       </div>
+
       <% data.forEach(element => { %>
 
       <div class="standard_card_container <%= element.title.toLowerCase() %>">
