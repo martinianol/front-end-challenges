@@ -69,14 +69,27 @@ main {
 .standard_card_container {
   margin: 15px 0px;
   background-color: #ff8b64;
-  text-align: right;
   border-radius: 15px;
-  height: 38px;
 }
 
-.standard_card_container img {
+.standard_card_container .icon {
+  height: 38px;
+  overflow: hidden;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.standard_card_container .icon img {
   width: 78px;
-  margin-right: 18px;
+  position: relative;
+  right: 18px;
+  top: -18px;
+}
+
+.standard_card_container .elipses {
+  margin: 0;
+  padding: 0;
 }
 
 .standard_card_info {
