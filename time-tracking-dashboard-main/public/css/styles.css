@@ -11,6 +11,15 @@ a {
   color: #fff;
 }
 
+a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+a img:hover {
+  filter: brightness(0) invert(1);
+}
+
 body {
   background-color: hsl(226, 43%, 10%);
   margin: 0;
@@ -80,25 +89,6 @@ main {
   border-radius: 15px;
 }
 
-.work {
-  background-color: #ff8b64;
-}
-.play {
-  background-color: #55c2e6;
-}
-.study {
-  background-color: #ff5e7d;
-}
-.exercise {
-  background-color: #4bcf82;
-}
-.social {
-  background-color: #7335d2;
-}
-.care {
-  background-color: #f1c75b;
-}
-
 .standard_card_container .icon {
   height: 38px;
   overflow: hidden;
@@ -159,4 +149,29 @@ main {
   font-size: 15px;
   line-height: 17.78px;
   color: #bbc0ff;
+}
+
+/*hover*/
+.standard_card_info:hover {
+  background-color: #33397a;
+}
+
+/*Background colors depending on category*/
+.work {
+  background-color: #ff8b64;
+}
+.play {
+  background-color: #55c2e6;
+}
+.study {
+  background-color: #ff5e7d;
+}
+.exercise {
+  background-color: #4bcf82;
+}
+.social {
+  background-color: #7335d2;
+}
+.care {
+  background-color: #f1c75b;
 }
