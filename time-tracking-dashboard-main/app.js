@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cors = require('cors');
+const data = require('./data.json');
 
 
 //To use static files
@@ -16,7 +17,13 @@ app.set('views', path.join(__dirname, 'views')) // indica al template engine don
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res, next) => {
-  res.render('index.ejs')
+  res.render('daily.ejs', { data })
+});
+app.get('/weekly', (req, res, next) => {
+  res.render('weekly.ejs', { data })
+});
+app.get('/monthly', (req, res, next) => {
+  res.render('monthly.ejs', { data })
 });
 const PORT = process.env.PORT || 3000;
 
