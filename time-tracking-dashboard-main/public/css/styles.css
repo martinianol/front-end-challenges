@@ -68,8 +68,20 @@ main {
 
 .standard_card_container {
   margin: 15px 0px;
-  background-color: #ff8b64;
   border-radius: 15px;
+}
+
+.work {
+  background-color: #ff8b64;
+}
+.play {
+  background-color: #55c2e6;
+}
+.study {
+  background-color: #f04667;
+}
+.exercise {
+  background-color: #f04667;
 }
 
 .standard_card_container .icon {
