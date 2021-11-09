@@ -38,33 +38,37 @@
           <li><a href="/monthly" id="monthly">Monthly</a></li>
         </ul>
       </div>
+      <section class= "cards_container">
 
-      <% data.forEach(element => { %>
 
-      <div class="standard_card_container <%= element.title.toLowerCase() %>">
-        <figure class="icon">
-          <img src="public/images/<%=element.icon%>" />
-        </figure>
-        <div class="standard_card_info">
-          <div class="category_container">
-            <div class="category_title"><%=element.title%></div>
-            <figure class="elipses">
-              <a>
-                <img src="public/images/icon-ellipsis.svg" />
-              </a>
-            </figure>
-          </div>
-          <div class="category_time">
-            <div class="actual_info"><%=element.current%>hrs</div>
-            <div class="last_info">
-              Last <%= element.type %> - <%=element.previous%>hrs
+
+        <% data.forEach(element => { %>
+  
+        <div class="standard_card_container <%= element.title.toLowerCase() %>">
+          <figure class="icon">
+            <img src="public/images/<%=element.icon%>" />
+          </figure>
+          <div class="standard_card_info">
+            <div class="category_container">
+              <div class="category_title"><%=element.title%></div>
+              <figure class="elipses">
+                <a>
+                  <img src="public/images/icon-ellipsis.svg" />
+                </a>
+              </figure>
             </div>
+            <div class="category_time">
+              <div class="actual_info"><%=element.current%>hrs</div>
+              <div class="last_info">
+                Last <%= element.type %> - <%=element.previous%>hrs
+              </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <% }) %>
+  
+        <% }) %>
+      </section>
     </main>
 
     <footer class="attribution">
