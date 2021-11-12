@@ -17,6 +17,10 @@ app.set('view engine', 'ejs')
 
 //Controller / Router :)
 
+app.get('/', (req, res, next) => {
+  res.redirect('/daily');
+})
+
 app.get('/daily', (req, res, next) => {
   const data = dataDaily
   res.render('index.ejs', { data })
@@ -35,7 +39,7 @@ app.get('/monthly', (req, res, next) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Server up and running on http://localhost:${PORT}/daily`)
+  console.log(`Server up and running on http://localhost:${PORT}`)
 });
 
 
