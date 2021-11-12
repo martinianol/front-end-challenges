@@ -47,10 +47,11 @@
 
         <% data.forEach(element => { %>
   
-        <div class="standard_card_container <%= element.title.toLowerCase() %>">
-          <figure class="icon">
+        <div class="standard_card_container ">
+          <figure class="icon <%= element.title.toLowerCase() %>">
             <img src="public/images/<%=element.icon%>" />
           </figure>
+          <div class= "border_top_card"></div>
           <div class="standard_card_info">
             <div class="category_container">
               <div class="category_title"><%=element.title%></div>

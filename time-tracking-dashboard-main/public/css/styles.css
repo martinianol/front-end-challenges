@@ -90,15 +90,17 @@ main {
 
 .standard_card_container {
   margin: 15px 0px;
-  border-radius: 15px;
+  position: relative;
 }
 
 .standard_card_container .icon {
-  height: 38px;
+  height: 53px;
   overflow: hidden;
   text-align: right;
   margin: 0;
   padding: 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .standard_card_container .icon img {
@@ -108,7 +110,7 @@ main {
   top: -18px;
 }
 
-.exercise .icon img {
+.icon.exercise img {
   top: 0px;
 }
 .standard_card_container .elipses {
@@ -118,11 +120,22 @@ main {
 
 .standard_card_info {
   background-color: #1c204b;
-  border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   z-index: 10;
   padding: 28px 24px;
-  position: relative;
 }
+
+.border_top_card {
+  background-color: #1c204b;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: 39px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 .category_container {
   display: flex;
   justify-content: space-between;
@@ -228,8 +241,8 @@ main {
     flex-direction: column;
     gap: 21px;
     align-items: flex-start;
-    margin-left: 32px;
-    margin-top: 26px;
+
+    padding: 26px 32px;
     height: auto;
   }
 
